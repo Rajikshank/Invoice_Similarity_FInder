@@ -21,11 +21,11 @@ def main():
         
         # Example existing invoices
         database = InvoiceDatabase()
-        database.add_invoice('invoice 1 - Bremer Spirituosen Contor GmbH', extract_features(extract_text_from_pdf(open('./train/2024.03.15_0954.pdf', 'rb'))))
-        database.add_invoice('invoice 2 - Bremer Spirituosen Contor GmbH', extract_features(extract_text_from_pdf(open('./train/2024.03.15_1145.pdf', 'rb'))))
-        database.add_invoice('invoice 3 - Faller', extract_features(extract_text_from_pdf(open('./train/Faller_8.PDF', 'rb'))))
-        database.add_invoice('invoice 4 - Süderelbe HAF Catering u. Service GmbH', extract_features(extract_text_from_pdf(open('../train/invoice_77073.pdf', 'rb'))))
-        database.add_invoice('invoice 5 - GmbH & Co', extract_features(extract_text_from_pdf(open('./train/invoice_102856.pdf', 'rb'))))
+        database.add_invoice('invoice 1 - Bremer Spirituosen Contor GmbH', extract_features(extract_text_from_pdf(open('/train/2024.03.15_0954.pdf', 'rb'))))
+        database.add_invoice('invoice 2 - Bremer Spirituosen Contor GmbH', extract_features(extract_text_from_pdf(open('/train/2024.03.15_1145.pdf', 'rb'))))
+        database.add_invoice('invoice 3 - Faller', extract_features(extract_text_from_pdf(open('/train/Faller_8.PDF', 'rb'))))
+        database.add_invoice('invoice 4 - Süderelbe HAF Catering u. Service GmbH', extract_features(extract_text_from_pdf(open('/train/invoice_77073.pdf', 'rb'))))
+        database.add_invoice('invoice 5 - GmbH & Co', extract_features(extract_text_from_pdf(open('/train/invoice_102856.pdf', 'rb'))))
         
         most_similar_file, similarity_score = database.find_most_similar(features)
         st.write(f'The most similar invoice is: {most_similar_file}')
