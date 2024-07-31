@@ -6,7 +6,10 @@ This project is a prototype system that identifies and matches similar invoices 
 
 The objective of this assignment is to develop a system that automatically categorizes incoming invoices by matching them to existing templates or previously processed invoices.
 
-## Demo 
+## 🪧 Demo 
+https://github.com/user-attachments/assets/6b723d81-5e15-4c42-86d6-d1b58d076a43
+
+
 
 ## 🚀 Features
 
@@ -54,5 +57,5 @@ The objective of this assignment is to develop a system that automatically categ
 3. It compares the uploaded invoice with existing invoices in the database.
 4. The most similar invoice and the similarity score are displayed.
 
-This README provides a comprehensive overview of the project, setup instructions, code snippets, and usage examples. Make sure to customize the GitHub repository URL and other specific details as needed.
+
 
