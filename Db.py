@@ -20,9 +20,9 @@ def process_invoice(file_path, database):
     text = extract_text_from_pdf(file_path)
     features = extract_features(text)
     
-    # Add structural analysis if needed
-    # layout_features = extract_layout_features(file_path)
-    # features['layout'] = layout_features
+    # Add structural analysis 
+    layout_features = extract_layout_features(file_path)
+    features['layout'] = layout_features
 
     most_similar_file, similarity_score = database.find_most_similar(features)
     return most_similar_file, similarity_score
