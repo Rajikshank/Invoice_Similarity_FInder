@@ -1,6 +1,6 @@
 # 📄 Invoice Similarity Finder
 
-This project is a prototype system that identifies and matches similar invoices based on their content and structure. It is developed as part of the Full-Stack Software Engineer Summer Intern position at Deeplogic.ai.
+This project is a prototype system that identifies and matches similar invoices based on their content and structure.
 
 ## ✨ Objective
 
